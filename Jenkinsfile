@@ -1,20 +1,20 @@
-pipeline{
+pipeline {
 
     agent any
 
-    stages{
-        
-        stage('Git Checkout'){
-            steps{
-            
-               script{
-                  git branch: 'main', url: 'https://github.com/Santhosh2010-ramesh/delete-_it.git'
-               }
+    stages {
+
+        stage('Git Checkout') {
+            steps {
+                script {
+                    git branch: 'main', url: 'https://github.com/Santhosh2010-ramesh/delete-_it.git'
+                }
             }
-                
         }
-        
+
+    }
 }
+
 
 // @Library('my-shared-library') _
 
