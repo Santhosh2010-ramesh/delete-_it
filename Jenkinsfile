@@ -8,7 +8,7 @@ pipeline{
             steps{
             
                script{
-                  
+                  git branch: 'main', url: 'https://github.com/Santhosh2010-ramesh/delete-_it.git'
                }
             }
                 
